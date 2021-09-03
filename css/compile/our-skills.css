@@ -1,0 +1,37 @@
+.skills {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #eee; }
+  .skills h1 {
+    color: var(--main-color);
+    margin: 0 0 20px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center; }
+  .skills .skills-box {
+    background-color: #fff;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15px; }
+    .skills .skills-box .skill-name {
+      font-weight: bold;
+      width: 100px;
+      text-align: center;
+      line-height: 30px; }
+    .skills .skills-box .skill-prograss {
+      height: 30px;
+      width: calc(100% - 110px);
+      background-color: #ddd;
+      position: relative; }
+      .skills .skills-box .skill-prograss span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        text-align: right;
+        padding-top: 5px;
+        background: var(--main-color);
+        transition: all 1.5s; }
+
+/*# sourceMappingURL=our-skills.css.map */

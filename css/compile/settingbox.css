@@ -1,0 +1,96 @@
+.setting-box {
+  position: fixed;
+  width: 250px;
+  z-index: 999;
+  min-height: 100vh;
+  background-color: #ffffff;
+  left: -250px;
+  top: 0;
+  transition: all .25s ease; }
+  .setting-box .toggle-setting {
+    position: absolute;
+    right: -30px;
+    background-color: white;
+    top: 100px;
+    text-align: center;
+    cursor: pointer; }
+    .setting-box .toggle-setting i {
+      font-weight: bold;
+      font-size: 20px;
+      padding: 8px 0px;
+      width: 30px; }
+  .setting-box .sett-container .option-box {
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    background-color: #EEE; }
+    .setting-box .sett-container .option-box h4 {
+      font-size: 16px;
+      margin: 0px;
+      color: #666; }
+    .setting-box .sett-container .option-box .color-list {
+      list-style: none;
+      text-align: center;
+      padding: 0; }
+      .setting-box .sett-container .option-box .color-list li {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #333;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .5; }
+      .setting-box .sett-container .option-box .color-list li.active {
+        opacity: 1;
+        border: 2px solid #ffffff; }
+      .setting-box .sett-container .option-box .color-list li:first-child {
+        background-color: #ff9800; }
+      .setting-box .sett-container .option-box .color-list li:nth-child(2) {
+        background-color: #e91e63; }
+      .setting-box .sett-container .option-box .color-list li:nth-child(3) {
+        background-color: #009688; }
+      .setting-box .sett-container .option-box .color-list li:nth-child(4) {
+        background: #03a9f4; }
+      .setting-box .sett-container .option-box .color-list li:nth-child(5) {
+        background-color: #4caf50; }
+  .setting-box .sett-container .option-box .random-background .yes,
+  .setting-box .sett-container .option-box .random-background .no {
+    color: #ffffff;
+    padding: 5px 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    opacity: .5;
+    background-color: #03a9f4;
+    display: inline-block;
+    cursor: pointer; }
+  .setting-box .sett-container .option-box .random-background span.active {
+    opacity: 1; }
+  .setting-box .sett-container .option-box .bullet-option .yes,
+  .setting-box .sett-container .option-box .bullet-option .no {
+    color: #ffffff;
+    padding: 5px 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    opacity: .5;
+    background-color: #03a9f4;
+    display: inline-block;
+    cursor: pointer; }
+  .setting-box .sett-container .option-box .bullet-option span.active {
+    opacity: 1; }
+  .setting-box .sett-container .reset-btn {
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+    color: white;
+    background-color: red;
+    text-align: center;
+    border: none;
+    display: block;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer; }
+
+.setting-box.open {
+  left: 0px; }
+
+/*# sourceMappingURL=settingbox.css.map */

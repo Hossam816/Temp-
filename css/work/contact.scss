@@ -1,0 +1,83 @@
+.contact{
+    min-height: 600px;
+    background-image: url('../../images/contact/233083.jpg');
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+
+    .container{
+        position: relative;
+        z-index: 2;
+
+        h2{
+            font-weight: bold;
+            font-size: 40px;
+            color: var(--main-color);
+            margin: 0 0 60px;
+            text-align: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: row;
+            max-width: 800px;
+            margin: 20px auto;
+            .left{
+                width: 50%;
+                margin-right: 15px;
+            }
+            .right{
+                width: 50%;
+            }
+            input:not([type="submit"]),
+            textarea{
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                background-color: rgba(255, 182, 182, 0.493);
+            }
+            input:not([type="submit"]):focus,
+            textarea:focus{
+            outline: 1px solid var(--main-color);
+            background-color: rgba(214, 206, 199, 0.493);
+            }
+            input{
+                height: 40px;
+            }
+            textarea{
+                height: 150px;
+            }
+            input[type="submit"]{
+                width: 100%;
+                padding: 10px;
+                border-color: transparent;
+                background-color: var(--main-color);
+                color: #fff;
+                cursor: pointer;
+            }
+            textarea:focus::-webkit-input-placeholder{
+                opacity: 0;
+                transition: .3s;
+            }
+            textarea:focus::placeholder{
+                opacity: 0;
+                transition: .3s;
+            }
+
+    }
+
+    
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.61);
+        z-index: 1;
+    }
+}

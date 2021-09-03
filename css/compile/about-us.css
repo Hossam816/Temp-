@@ -1,0 +1,22 @@
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex; }
+  .about-us .info-box {
+    flex: 1; }
+    .about-us .info-box h2 {
+      color: var(--main-color);
+      font-weight: bold;
+      font-size: 30px; }
+    .about-us .info-box p {
+      font-size: 20px;
+      color: #777;
+      letter-spacing: 1.7px;
+      line-height: 1.7rem; }
+  .about-us .img-box {
+    flex: 1;
+    text-align: center; }
+    .about-us .img-box img {
+      width: 350px; }
+
+/*# sourceMappingURL=about-us.css.map */

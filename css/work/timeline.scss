@@ -1,0 +1,100 @@
+.timeline{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #eee;
+    .timeline-content{
+        position: relative;
+        overflow: hidden;
+        .year{
+            margin: 20px auto;
+            width: 50px;
+            background-color: var(--main-color);
+            position: relative;
+            z-index: 2;
+            border-radius: 4px;
+            text-align: center;
+            color: #fff;
+            padding:2px 5px;
+            font-weight: bold;
+        }
+        .left, .right{
+            width: calc(50% - 25px);
+            margin-bottom: 40px;
+            position: relative;
+            .content{
+                padding: 20px;
+                background-color: #fff;
+                h4{
+                    font-weight: bold;
+                    color: var(--main-color);
+                    margin: 0 0 10px;
+                }
+                p{
+                    color: #666;
+                    margin: 0;
+                    line-height: 1.6rem;
+                }
+            }
+            
+        }
+        .left{
+            float: left;
+            .content::before{
+                content: '';
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent transparent transparent white;
+                height: 0;
+                width: 0;
+                position: absolute;
+                right: -20px;
+                top: 11px;
+            }
+        }
+        .left::before{
+            content: "";
+            width: 14px;
+            height: 14px;
+            background-color: #fff;
+            border: 3px solid var(--main-color);
+            position: absolute;
+            right: -35px;
+            border-radius: 50%;
+            top: 10px;
+        }
+
+
+        .right{
+            float: right;
+            .content::before{
+                content: '';
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent #fff transparent transparent;
+                position: absolute;
+                left: -20px;
+                top: 11px;
+            }
+        }
+        .right::before{
+            content: "";
+            width: 14px;
+            height: 14px;
+            background-color: #fff;
+            border: 3px solid var(--main-color);
+            position: absolute;
+            left: -35px;
+            border-radius: 50%;
+            top: 10px;
+        }
+    }
+    .timeline-content::before{
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: var(--main-color);
+        position: absolute;
+        left: 50%;
+        margin-left: -2px;
+    }
+}

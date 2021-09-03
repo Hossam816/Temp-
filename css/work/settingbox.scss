@@ -1,0 +1,130 @@
+
+
+.setting-box{
+    position: fixed;
+    width: 250px;
+    z-index: 999;
+    min-height: 100vh;
+    background-color: #ffffff;
+    left:-250px;
+    top: 0;
+    transition: all .25s ease;
+
+    
+    .toggle-setting{
+        position: absolute;
+        right: -30px;
+        background-color: white;
+        top: 100px;
+        text-align: center;
+        cursor: pointer;
+        i{
+            font-weight: bold;
+            font-size: 20px;
+            padding: 8px 0px;
+            width: 30px;
+        }
+    }
+
+    .sett-container{
+
+        .option-box{
+            padding: 10px;
+            text-align: center;
+            margin: 20px;
+            background-color: #EEE;
+
+            h4{
+                font-size: 16px;
+                margin: 0px;
+                color: #666;
+            }
+
+            .color-list{
+                list-style: none;
+                text-align: center;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #333;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    opacity: .5;
+                }
+                li.active{
+                    opacity: 1;
+                    border: 2px solid #ffffff;
+                }
+                li:first-child{
+                    background-color: #ff9800;
+                }
+                li:nth-child(2){
+                    background-color: #e91e63;
+                }
+                li:nth-child(3){
+                    background-color: #009688;
+                }
+                li:nth-child(4){
+                    background: #03a9f4;
+                }
+                li:nth-child(5){
+                    background-color: #4caf50;
+                }
+            }
+            
+        }
+
+        .option-box{
+            .random-background{
+                .yes,
+                .no{
+                    color: #ffffff;
+                    padding: 5px 15px;
+                    margin-top: 15px;
+                    border-radius: 6px;
+                    opacity: .5;
+                    background-color: #03a9f4;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+                span.active{
+                    opacity: 1;
+                }
+            }
+            .bullet-option {
+                .yes,
+                .no{
+                    color: #ffffff;
+                    padding: 5px 15px;
+                    margin-top: 15px;
+                    border-radius: 6px;
+                    opacity: .5;
+                    background-color: #03a9f4;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+                span.active{
+                    opacity: 1;
+                }
+            }
+        }
+        .reset-btn{
+            width: 90%;
+            padding: 15px;
+            margin: 20px auto;
+            color: white;
+            background-color: red;
+            text-align: center;
+            border: none;
+            display: block;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+}
+.setting-box.open{
+    left: 0px;
+}

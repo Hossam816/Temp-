@@ -1,0 +1,84 @@
+/*start landing page*/
+
+.landing-page{
+    min-height: 100vh;
+    background-image: url('../../images/02.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+
+    .container{
+        z-index: 1000;
+    }
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #0000006b;
+        z-index: 1;
+    }
+    .header-area{
+        color: white;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        padding: 10px;
+        .links-container{
+            width: 100%;
+            text-align: right;
+        }
+        .logo{
+            width: 300px;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .links{
+            width: 100%;
+            padding-left: 0;
+            list-style: none;
+            font-size: 15px;
+        }
+        .links li {
+            display: inline-block;
+            margin-left: 15px;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: white;
+                transition: all .25s ease;
+            }
+            a:hover,
+            a.active{
+                color: var(--main-color);
+            }
+        }
+    }
+    .intro-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+        h1{
+            font-size: 40px;
+            letter-spacing: 2.2px;
+            span{
+                color: var(--main-color);
+            }
+        }
+        p{
+            font-size: 20px;
+            line-height: 1.9;
+        }
+    }
+
+}
+
+
+
+/*end landing page*/
