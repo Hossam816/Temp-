@@ -4,7 +4,8 @@
   background-image: url("../../images/02.jpg");
   background-size: cover;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  background-position: center; }
   .landing-page .container {
     z-index: 1000; }
   .landing-page .overlay {
